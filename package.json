@@ -1,0 +1,35 @@
+{
+  "name": "creative-portfolio",
+  "version": "1.0.0",
+  "description": "A creative portfolio showcasing UX design, AR/VR experiences, and 3D animation",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "@react-three/fiber": "^8.13.6",
+    "@react-three/drei": "^9.88.0",
+    "three": "^0.155.0",
+    "framer-motion": "^10.16.0",
+    "gsap": "^3.12.2",
+    "lenis": "^1.0.27"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@types/three": "^0.155.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}
