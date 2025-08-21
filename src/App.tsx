@@ -28,11 +28,11 @@ function App() {
           <ThemeToggle />
           <AnimatePresence mode="wait">
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/case-study/:id" element={<CaseStudy />} />
-              <Route path="/play" element={<Play />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="" element={<Home />} />
+              <Route path="case-study/:id" element={<CaseStudy />} />
+              <Route path="play" element={<Play />} />
+              <Route path="about" element={<About />} />
+              <Route path="contact" element={<Contact />} />
             </Routes>
           </AnimatePresence>
         </div>
