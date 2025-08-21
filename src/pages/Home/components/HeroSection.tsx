@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { personalInfo, heroStats } from '../../../data/personalData';
+import { heroStats } from '../../../data/personalData';
 import './HeroSection.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
       if (!heroSection) return;
 
       const heroRect = heroSection.getBoundingClientRect();
-      const viewportHeight = window.innerHeight;
+      // const viewportHeight = window.innerHeight;
       
       // Show indicator if hero section is more than 60% visible
       // Hide if hero section is mostly out of view (less than 40% visible)
