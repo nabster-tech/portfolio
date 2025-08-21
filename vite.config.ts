@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
-    base: env.VITE_BASE_URL || "/", // Use environment variable or fallback to root
+    base: "/portfolio/", // Use environment variable or fallback to root
     optimizeDeps: {
       include: ["react", "react-dom"],
     },
