@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Navigation.css";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,7 +41,7 @@ const Navigation: React.FC = () => {
         <div className="nav-container">
           <Link to="/" className="logo">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              Portfolio
+              Tushar Raj
             </motion.div>
           </Link>
 
@@ -63,6 +64,7 @@ const Navigation: React.FC = () => {
                 </Link>
               </motion.div>
             ))}
+            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}

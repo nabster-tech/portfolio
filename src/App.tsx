@@ -6,7 +6,6 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 
 // Components
 import Navigation from "./components/Navigation/Navigation";
-import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 import Home from "./pages/Home/Home";
 import CaseStudy from "./pages/CaseStudy/CaseStudy";
 import Play from "./pages/Play/Play";
@@ -25,7 +24,6 @@ function App() {
       <Router basename={import.meta.env.BASE_URL}>
         <div className="App">
           <Navigation />
-          <ThemeToggle />
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<Home />} />
