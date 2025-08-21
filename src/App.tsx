@@ -22,7 +22,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <Router basename="/portfolio>
+      <Router basename="/portfolio">
         <div className="App">
           <Navigation />
           <ThemeToggle />
