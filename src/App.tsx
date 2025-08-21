@@ -22,7 +22,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <Router basename="/portfolio">
+      <Router basename={import.meta.env.BASE_URL}>
         <div className="App">
           <Navigation />
           <ThemeToggle />

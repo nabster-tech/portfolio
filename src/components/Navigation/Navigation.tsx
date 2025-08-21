@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import './Navigation.css';
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import "./Navigation.css";
 
 const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,16 +13,16 @@ const Navigation: React.FC = () => {
       setScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const menuItems = [
-    { label: 'Home', path: '/' },
-    { label: 'Work', path: '/#work' },
-    { label: 'Play', path: '/play' },
-    { label: 'About', path: '/about' },
-    { label: 'Contact', path: '/contact' },
+    { label: "Home", path: "/" },
+    { label: "Work", path: "/#work" },
+    { label: "Play", path: "/play" },
+    { label: "About", path: "/about" },
+    { label: "Contact", path: "/contact" },
   ];
 
   const toggleMenu = () => {
@@ -32,17 +32,14 @@ const Navigation: React.FC = () => {
   return (
     <>
       <motion.nav
-        className={`navigation ${scrolled ? 'scrolled' : ''}`}
+        className={`navigation ${scrolled ? "scrolled" : ""}`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: [0.6, -0.05, 0.01, 0.99] }}
       >
         <div className="nav-container">
           <Link to="/" className="logo">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               Portfolio
             </motion.div>
           </Link>
@@ -59,7 +56,7 @@ const Navigation: React.FC = () => {
                 <Link
                   to={item.path}
                   className={`nav-link ${
-                    location.pathname === item.path ? 'active' : ''
+                    location.pathname === item.path ? "active" : ""
                   }`}
                 >
                   {item.label}
@@ -75,7 +72,7 @@ const Navigation: React.FC = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}>
+            <span className={`hamburger ${isMenuOpen ? "open" : ""}`}>
               <span></span>
               <span></span>
               <span></span>
@@ -96,9 +93,9 @@ const Navigation: React.FC = () => {
           >
             <motion.div
               className="mobile-menu"
-              initial={{ x: '100%' }}
+              initial={{ x: "100%" }}
               animate={{ x: 0 }}
-              exit={{ x: '100%' }}
+              exit={{ x: "100%" }}
               transition={{ duration: 0.4, ease: [0.6, -0.05, 0.01, 0.99] }}
             >
               <div className="mobile-menu-content">
