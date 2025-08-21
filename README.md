@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with TypeScript, React, and cutting-edge web technologies. Inspired by award-winning portfolio designs, this project showcases UX design, AR/VR experiences, and 3D animations with smooth animations and interactive elements.
 
+URL: https://nabster-tech.github.io/portfolio/
+
 ## 🚀 Features
 
 - **Modern Design**: Clean, professional design with dark theme and accent colors
